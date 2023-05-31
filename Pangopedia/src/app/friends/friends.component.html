@@ -1,0 +1,7 @@
+
+<ul>
+    <li *ngFor="let profile of profiles">
+      {{ profile.username }} - {{ profile.role }}
+      <button (click)="deleteFriend(profile._id)">delete Friend</button>
+    </li>
+  </ul>

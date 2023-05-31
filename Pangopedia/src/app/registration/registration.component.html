@@ -1,0 +1,14 @@
+<h2>Page d'inscription</h2>
+<form  (submit)="register()">
+  <div>
+    <label for="username">Nom d'utilisateur</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username">
+  </div>
+  <div>
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password">
+  </div>
+  <button type="submit">S'inscrire</button>
+</form>
+
+<a routerLink="/login">j'ai un compte</a>

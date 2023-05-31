@@ -1,0 +1,18 @@
+<h2>Mon Profil</h2>
+<p>Nom: {{ name }}</p>
+<p>Rôle: {{ role }}</p>
+
+<h3>Modifier le profil</h3>
+<form>
+  <div>
+    <label for="role">Rôle:</label>
+    <select id="role" [(ngModel)]="role" [ngModelOptions]="{ standalone: true }">
+      <option value="Guerrier">Guerrier</option>
+      <option value="Alchimiste">Alchimiste</option>
+      <option value="Sorcier">Sorcier</option>
+      <option value="Espions">Espions</option>
+      <option value="Enchanteur">Enchanteur</option>
+    </select>
+  </div>
+  <button (click)="sauvegarder()">Sauvegarder</button>
+</form>
